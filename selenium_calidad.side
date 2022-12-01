@@ -1,0 +1,141 @@
+{
+  "id": "ad585ae5-b70d-4960-866a-db1b9a7aa573",
+  "version": "2.0",
+  "name": "final_calidad",
+  "url": "https://localhost:7023",
+  "tests": [{
+    "id": "8f099fd0-e16b-4fe4-a148-44be17c05e9d",
+    "name": "Ingresar a Privacy",
+    "commands": [{
+      "id": "9c7fc502-a824-4d35-b096-285b682c310b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47cf260a-7235-4af5-a8aa-bfe08213c7bd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "982x818",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b54b51a3-c6ae-4a7a-a439-35b9b74c123e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Privacy",
+      "targets": [
+        ["linkText=Privacy", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Privacy')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Privacy')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Privacy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b9d6aae-d2b5-4d36-82ef-1953b78a098c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Privacy Policy')]", "xpath:innerText"]
+      ],
+      "value": "Privacy Policy"
+    }]
+  }, {
+    "id": "87f3ea8d-44b4-49af-a019-47f1c3fc64e2",
+    "name": "Generar Jugada",
+    "commands": [{
+      "id": "c927f11b-46af-487d-bda1-4ada131d9e07",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a77033c1-fafa-4e52-8928-1913a340874b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "978x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d18bf6f2-2f61-457d-bb42-b2517825e926",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Generar Jugada')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cb2e38d-2896-4850-b7f2-3d5b60b6609e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.display-4",
+      "targets": [
+        ["css=.display-4", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome Poker Game')]", "xpath:innerText"]
+      ],
+      "value": "Welcome Poker Game"
+    }]
+  }, {
+    "id": "17ae5d4d-b121-469a-a0d5-534c66b41753",
+    "name": "Botón Privacy",
+    "commands": [{
+      "id": "874330ef-b1f2-4186-9540-ede949e98e30",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64acad55-5765-4213-9910-bcee39eb1924",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "985x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8e572c8-1fb0-4a0e-a3c9-c1da34c0eb6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container > a",
+      "targets": [
+        ["css=.container > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Privacy')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/Home/Privacy')])[2]", "xpath:href"],
+        ["xpath=//footer/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ad1357b-7bff-4cf4-8e03-ac4a80fd96ed",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Privacy Policy')]", "xpath:innerText"]
+      ],
+      "value": "Privacy Policy"
+    }]
+  }],
+  "suites": [{
+    "id": "d6abbef3-5f48-4768-82c3-02e71d0edc2b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://localhost:7023/"],
+  "plugins": []
+}

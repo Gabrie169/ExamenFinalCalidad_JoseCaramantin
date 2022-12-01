@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Calidad20222.web.props" />
+</Project>
